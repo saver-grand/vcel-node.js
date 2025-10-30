@@ -15,13 +15,18 @@ app.use(cors({
 
 // ✅ Stream channel map (use environment variables, not hardcoded)
 const streams = {
-  gma7: process.env.GMA7_URL,
-  cinemoph: process.env.CINEMOPH_URL,
-  kapamilyachannelHD: process.env.KAPAMILYA_URL,
-  gtv: process.env.GTV_URL,
-  cinemaoneph: process.env.CINEMAONE_URL,
-  alltv2: process.env.ALLTV_URL,
-  net25: process.env.NET25_URL,
+  nba1: process.env.nba1,
+  nba2: process.env.nba2,
+  nba3: process.env.nba3,
+  nba4: process.env.nba4,
+  nba5: process.env.nba5,
+  nba6: process.env.nba6,
+  nba7: process.env.nba7,
+  nba8: process.env.nba8,
+  nba9: process.env.nba9,
+  nba10: process.env.nba10,
+  nba11: process.env.nba11,
+  nba12: process.env.nba12,
 };
 
 // 🔒 Temporary segment token map
