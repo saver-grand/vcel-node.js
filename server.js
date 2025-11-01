@@ -108,8 +108,8 @@ app.get('/segment.ts', (req, res) => {
 // 🌍 Root page
 app.get('/', (req, res) => {
   res.send(`
-    <h2>✅ Stream Proxy Server Running</h2>
-    <p>Example: <code>/nba1/index.m3u8</code></p>
+    <h2>404 NOT FOUND</h2>
+    <p>Example: <code></code></p>
   `);
 });
 
