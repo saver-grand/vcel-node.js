@@ -145,7 +145,7 @@ app.get(['/segment.ts', '/segment.m4s'], (req, res) => {
 
 // Root
 app.get('/', (req, res) => {
-  res.send(`<h2>404 NOT FOUND</h2><p>Example: /nba1/index.m3u8 or /nba1/manifest.mpd</p>`);
+  res.send(`<h2>404 NOT FOUND</h2><p></p>`);
 });
 
 app.listen(port, () => {
