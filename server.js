@@ -31,6 +31,8 @@ const streams = {
   nba11: process.env.nba11,
   nba12: process.env.nba12,
   gma: process.env.gma,
+  gtv: process.env.gtv,
+  kapamilyahd: process.env.kapamilyahd,
 };
 
 const segmentMap = new Map();
