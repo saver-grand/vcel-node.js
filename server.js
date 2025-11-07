@@ -161,33 +161,7 @@ app.get(['/segment.ts', '/segment.m4s'], (req, res) => {
 // 🧪 Built-in Shaka Player test page
 app.get('/test', (req, res) => {
   res.send(`
-  <html>
-    <head>
-      <title>Player Test</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.9.2/shaka-player.compiled.js"></script>
-    </head>
-    <body style="font-family:sans-serif; background:#111; color:#eee; text-align:center;">
-      <h2>🎬 Shaka Player Test</h2>
-      <video id="video" width="80%" controls autoplay style="border:2px solid #555; border-radius:10px;"></video>
-      <p>Example: <code>/nba1/manifest.mpd</code> or <code>/gma/index.m3u8</code></p>
-      <script>
-        async function init() {
-          const video = document.getElementById('video');
-          const player = new shaka.Player(video);
-          window.player = player;
-          try {
-            await player.load(window.location.origin + '/nba1/manifest.mpd');
-            console.log('✅ Stream loaded successfully');
-          } catch (e) {
-            console.error('❌ Error loading stream', e);
-            alert('Error: ' + e.message);
-          }
-        }
-        document.addEventListener('DOMContentLoaded', init);
-      </script>
-    </body>
-  </html>
+  
   `);
 });
 
