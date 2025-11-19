@@ -167,7 +167,7 @@ app.get('/test', (req, res) => {
 
 // Root
 app.get('/', (req, res) => {
-  res.send(`<h2>✅ DASH & HLS Proxy Server Running</h2><p>Try <a href="/test">/test</a> to check playback.</p>`);
+  res.send(`<h2>404 error</h2><p> <a href=""></a></p>`);
 });
 
 app.listen(port, () => {
